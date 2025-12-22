@@ -62,3 +62,15 @@ uv run eda-cli report data/example.csv --out-dir reports
 ```bash
 uv run pytest -q
 ```
+Небольшое CLI-приложение для базового анализа CSV-файлов с HTTP-сервисом на FastAPI.
+## HTTP-сервис
+
+Запуск:
+uv run uvicorn eda_cli.api:app --reload --port 8000
+Документация: `http://localhost:8000/docs`
+
+**Эндпоинты:**
+- `GET /health` — проверка работоспособности
+- `POST /quality` — оценка качества по агрегированным признакам
+- `POST /quality-from-csv` — оценка качества по CSV-файлу
+- `POST /quality-flags-from-csv` — возвращает все булевы флаги качества из CSV (включая `has_suspicious_id_dublictes`, `has_high_cardinality_categoricals` из HW03)
