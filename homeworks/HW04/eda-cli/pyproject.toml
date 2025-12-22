@@ -1,0 +1,30 @@
+[project]
+name = "eda-cli"
+version = "0.2.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Дамир", email = "damirxxl_XXl@mail.ru" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.126.0",
+    "matplotlib>=3.10.7",
+    "pandas>=2.3.3",
+    "pytest>=9.0.1",
+    "python-multipart>=0.0.20",
+    "typer>=0.20.0",
+    "uvicorn[standard]>=0.39.0",
+]
+
+[project.scripts]
+eda-cli = "eda_cli.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.9.15,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
