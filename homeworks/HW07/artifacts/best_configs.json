@@ -1,17 +1,16 @@
 {
     "data/S07-hw-dataset-01.csv": {
-        "best_method": "KMeans",
+        "best_method": "DBSCAN",
         "params": {
-            "n_clusters": 3,
-            "random_state": 42,
-            "n_init": 10
+            "eps": 1.7000000000000004,
+            "min_samples": 3
         },
         "reason": "Best Silhouette/Stability balance"
     },
     "data/S07-hw-dataset-02.csv": {
         "best_method": "DBSCAN",
         "params": {
-            "eps": 0.8,
+            "eps": 0.8000000000000002,
             "min_samples": 10
         },
         "reason": "Best Silhouette/Stability balance"
@@ -19,8 +18,8 @@
     "data/S07-hw-dataset-04.csv": {
         "best_method": "DBSCAN",
         "params": {
-            "eps": 3.0,
-            "min_samples": 5
+            "eps": 1.5,
+            "min_samples": 7
         },
         "reason": "Best Silhouette/Stability balance"
     }

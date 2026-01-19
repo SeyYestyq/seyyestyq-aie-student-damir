@@ -1,10 +1,10 @@
 [
     {
         "dataset": "data/S07-hw-dataset-01.csv",
-        "model": "KMeans",
-        "silhouette": 0.3968,
-        "davies_bouldin": 0.9646,
-        "calinski_harabasz": 10446.6381,
+        "model": "DBSCAN",
+        "silhouette": 0.5216,
+        "davies_bouldin": 0.6853,
+        "calinski_harabasz": 11786.9546,
         "noise_ratio": 0.0
     },
     {
@@ -18,9 +18,9 @@
     {
         "dataset": "data/S07-hw-dataset-04.csv",
         "model": "DBSCAN",
-        "silhouette": 0.4559,
-        "davies_bouldin": 0.9515,
-        "calinski_harabasz": 5346.0899,
-        "noise_ratio": 0.0013
+        "silhouette": 0.556,
+        "davies_bouldin": 1.1015,
+        "calinski_harabasz": 1148.8165,
+        "noise_ratio": 0.8856
     }
 ]
