@@ -1,0 +1,1 @@
+{"dataset": "KMNIST", "seed": 42, "model_type": "MLP + BatchNorm + EarlyStopping", "hidden_sizes": [256, 128], "dropout_p": 0.0, "use_batchnorm": true, "optimizer": "Adam", "lr": 0.001, "early_stopping_patience": 5, "epochs_trained": 9, "best_val_accuracy": 0.949, "best_val_loss": 0.17071095749735832}
