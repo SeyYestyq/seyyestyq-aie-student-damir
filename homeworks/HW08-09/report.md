@@ -30,14 +30,14 @@
 - Epochs (макс): 20 (EarlyStopping обрезает раньше)
 - EarlyStopping: patience=5, metric=val_accuracy
 
-## 5. Часть A (S08): регуляризация (E1–E4)
+## 5. Часть A (S08): регуляризация (E1-E4)
 
 - **E1 (base):** 2 скрытых слоя (256, 128), ReLU, без Dropout/BatchNorm. Val accuracy ≈ 0.954.
 - **E2 (Dropout):** как E1 + Dropout(p=0.5). Val accuracy ≈ 0.947. Снижение переобучения (val loss ниже), но accuracy чуть ниже.
 - **E3 (BatchNorm):** как E1 + BatchNorm1d между Linear и ReLU. Val accuracy ≈ 0.955. Лучший результат среди E1–E3.
 - **E4 (EarlyStopping):** лучший из (E2/E3) по val_accuracy + EarlyStopping (patience=5). Сохранён `best_model.pt`.
 
-## 6. Часть B (S09): LR, оптимизаторы, weight decay (O1–O3)
+## 6. Часть B (S09): LR, оптимизаторы, weight decay (O1-O3)
 
 - **O1:** LR слишком большой — Adam, lr=0.1, 8 эпох. Accuracy ≈ 0.94 (из-за BatchNorm сеть справилась с большим LR лучше, но обучение все еще нестабильно).
 - **O2:** LR слишком маленький — Adam, lr=1e-5, 8 эпох. Accuracy ≈ 0.83 (обучение сильно замедленно по сравнению с базовым lr=1e-3).

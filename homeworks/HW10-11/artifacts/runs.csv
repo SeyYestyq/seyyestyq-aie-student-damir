@@ -1,0 +1,34 @@
+Experiment,Task,Metric,Value
+C1,classification,best_val_accuracy,0.3829
+C1,classification,test_accuracy,0.3888
+C2,classification,best_val_accuracy,0.3316
+C2,classification,test_accuracy,0.3365
+C2,classification,best_val_accuracy,0.3316
+C2,classification,test_accuracy,0.3365
+C3,classification,best_val_accuracy,0.5741
+C3,classification,test_accuracy,0.5736
+C4,classification,best_val_accuracy,0.6818
+C4,classification,test_accuracy,0.6881
+V1,segmentation,mean_iou,0.6908
+V2,segmentation,mean_iou,0.6909
+C2,classification,best_val_accuracy,0.3499
+C2,classification,test_accuracy,0.3409
+C3,classification,best_val_accuracy,0.5753
+C3,classification,test_accuracy,0.5702
+V1,segmentation,mean_iou,0.6908
+V2,segmentation,mean_iou,0.6909
+V1,segmentation,mean_iou,0.6908
+V2,segmentation,mean_iou,0.6909
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3379,0.337,,,,Augmented transforms
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3829,,,,,Base transforms only
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3479,,,,,Augmented transforms
+C3,classification,CIFAR100,42,ResNet18,Adam,0.001,5,0.5775,,,,,Head-only frozen backbone
+C4,classification,CIFAR100,42,ResNet18,Adam,1e-4/1e-3,5,0.6755,,,,,Finetune layer4 and fc
+C4_FINAL,classification,CIFAR100,42,Best Model,-,-,5,,0.6746,,,,Final evaluation on test set
+V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6908,Base mask thresholding
+V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6909,Morphological opening applied
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3824,,,,,Base transforms only
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.368,,,,,Augmented transforms
+C3,classification,CIFAR100,42,ResNet18,Adam,0.001,5,0.5775,,,,,Head-only frozen backbone
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.328,,,,,Base transforms only
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.2965,,,,,Augmented transforms
