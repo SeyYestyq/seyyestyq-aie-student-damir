@@ -1,1 +1,1 @@
-{"dataset": "CIFAR100", "best_experiment": "C4", "seed": 42, "epochs": 5, "test_acc": 0.7061}
+{"dataset": "CIFAR100", "best_experiment": "C4", "seed": 42, "epochs": 5, "test_acc": 0.7144}

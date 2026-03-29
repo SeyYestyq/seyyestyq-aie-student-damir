@@ -6,3 +6,10 @@ C4,classification,CIFAR100,42,ResNet18,Adam,1e-4/1e-3,5,0.6988,,,,,Finetune laye
 C4_FINAL,classification,CIFAR100,42,Best Model,-,-,5,,0.7061,,,,Final evaluation on test set
 V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6908,Base mask thresholding
 V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6909,Morphological opening applied
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3759,,,,,Base transforms only
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,5,0.3532,,,,,Augmented transforms
+C3,classification,CIFAR100,42,ResNet18,Adam,0.001,5,0.5803,,,,,Head-only frozen backbone
+C4,classification,CIFAR100,42,ResNet18,Adam,1e-4/1e-3,5,0.7063,,,,,Finetune layer4 and fc
+C4_FINAL,classification,CIFAR100,42,Best Model,-,-,5,,0.7144,,,,Final evaluation on test set
+V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6908,Base mask thresholding
+V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,-,,,,,0.6909,Morphological opening applied
