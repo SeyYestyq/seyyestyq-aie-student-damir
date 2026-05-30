@@ -9,16 +9,16 @@
 
 | № | Критерий | Выполнено | Комментарий |
 |---|----------|-----------|-------------|
-| 1 | **Паспорт проекта** (README.md) | ✅ | Заполнен: название, автор, описание, ссылка на репозиторий, контакты |
-| 2 | **EDA и аудит данных** (ноутбук) | ✅ | `notebooks/01_eda_and_data_audit.ipynb` — пропуски, дисбалансы, визуализация, статистика |
-| 3 | **Эксперименты с моделями** (ноутбук + артефакты) | ✅ | `notebooks/02_model_comparison.ipynb` — CatBoost vs XGBoost vs RandomForest vs LightGBM vs Ridge |
-| 4 | **Выбор финальной модели с обоснованием** | ✅ | CatBoost выбран по метрикам MAE, RMSE, R² — задокументировано в отчёте и ноутбуке |
-| 5 | **Оформленный сервис (API)** | ✅ | `src/api.py` — FastAPI с `/predict`, `/predict-batch`, `/health`, `/info` |
-| 6 | **Unit-тесты** | ✅ | `tests/test_model.py` — тесты модели, API-endpoint, схемы Pydantic |
-| 7 | **Конфигурация через переменные среды** | ✅ | `src/config.py` + `configs/.env.example` — Pydantic Settings + .env |
-| 8 | **Контейнеризация (Docker)** | ✅ | `Dockerfile` + `docker-compose.yml` в корневом каталоге проекта |
-| 9 | **Наблюдаемость (логирование, health-check)** | ✅ | Loguru + `/health` endpoint + structured JSON logs |
-| 10 | **Отчёт (report.md)** | ✅ | Полный отчёт: предметная область, EDA, эксперименты, архитектура, результаты, выводы |
+| 1 | **Паспорт проекта** (README.md) |  Заполнен: название, автор, описание, ссылка на репозиторий, контакты |
+| 2 | **EDA и аудит данных** (ноутбук) |  `notebooks/01_eda_and_data_audit.ipynb` — пропуски, дисбалансы, визуализация, статистика |
+| 3 | **Эксперименты с моделями** (ноутбук + артефакты) |  `notebooks/02_model_comparison.ipynb` — CatBoost vs XGBoost vs RandomForest vs LightGBM vs Ridge |
+| 4 | **Выбор финальной модели с обоснованием** |  CatBoost выбран по метрикам MAE, RMSE, R² — задокументировано в отчёте и ноутбуке |
+| 5 | **Оформленный сервис (API)** |  `src/api.py` — FastAPI с `/predict`, `/predict-batch`, `/health`, `/info` |
+| 6 | **Unit-тесты** |  `tests/test_model.py` — тесты модели, API-endpoint, схемы Pydantic |
+| 7 | **Конфигурация через переменные среды** |  `src/config.py` + `configs/.env.example` — Pydantic Settings + .env |
+| 8 | **Контейнеризация (Docker)** | `Dockerfile` + `docker-compose.yml` в корневом каталоге проекта |
+| 9 | **Наблюдаемость (логирование, health-check)** |  Loguru + `/health` endpoint + structured JSON logs |
+| 10 | **Отчёт (report.md)** |  Полный отчёт: предметная область, EDA, эксперименты, архитектура, результаты, выводы |
 
 ---
 
@@ -26,12 +26,12 @@
 
 | Бонус | Выполнено | Комментарий |
 |-------|-----------|-------------|
-| Нейросетевой базлайн (MLP) | ✅ | MLPRegressor(128→64→32) — сравнение с CatBoost |
-| Скрипт обучения `src/train.py` | ✅ | End-to-end: данные → обучение → сохранение модели |
-| Пакетная обработка (`/predict-batch`) | ✅ | Поддержка до 100 объектов в одном запросе |
-| Feature importance интерпретация | ✅ | CatBoost built-in feature importance |
-| Документация API (Swagger) | ✅ | Авто-генерация через FastAPI `/docs` |
-| Демо-данные для тестирования | ✅ | `data/history_drop_dataset.csv` (5000 строк) |
+| Нейросетевой базлайн (MLP) |  MLPRegressor(128→64→32) — сравнение с CatBoost |
+| Скрипт обучения `src/train.py` | End-to-end: данные, обучение , сохранение модели |
+| Пакетная обработка (`/predict-batch`) |  | Поддержка до 100 объектов в одном запросе |
+| Feature importance интерпретация | | CatBoost built-in feature importance |
+| Документация API (Swagger) |  | Авто-генерация через FastAPI `/docs` |
+| Демо-данные для тестирования | | `data/history_drop_dataset.csv` (5000 строк) |
 
 ---
 
