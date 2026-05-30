@@ -1,0 +1,59 @@
+# Drop Forecaster — Project-specific .gitignore
+
+# Virtual environments (project-specific)
+.venv/
+venv/
+ENV/
+.conda/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
+
+# Jupyter checkpints
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+
+# CatBoost training logs
+catboost_info/
+
+# Logs
+logs/
+*.log
+
+# Environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Model files (large binaries) — comment out if you want to track models
+# *.cbm
+# *.pkl
+# *.joblib
+
+# Docker
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Data files (generated)
+data/*.csv
+!data/sample/sample_20_rows.csv

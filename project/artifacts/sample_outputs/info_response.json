@@ -1,0 +1,28 @@
+{
+  "model_type": "CatBoostRegressor",
+  "version": "1.0.0",
+  "is_loaded": true,
+  "features": [
+    "customer_inn",
+    "region",
+    "fz_type",
+    "procedure_type",
+    "nmck_log1p",
+    "participants_count_est",
+    "customer_avg_drop",
+    "customer_contracts_count"
+  ],
+  "cat_features": [
+    "customer_inn",
+    "region",
+    "fz_type",
+    "procedure_type"
+  ],
+  "num_features": [
+    "nmck_log1p",
+    "participants_count_est",
+    "customer_avg_drop",
+    "customer_contracts_count"
+  ],
+  "model_path": "artifacts/drop_forecaster.cbm"
+}

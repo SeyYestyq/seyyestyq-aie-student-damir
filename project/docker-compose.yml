@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  drop-forecaster:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: drop-forecaster-api
+    ports:
+      - "8000:8000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - API_LOG_LEVEL=INFO
+      - MODEL_PATH=artifacts/drop_forecaster.cbm
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

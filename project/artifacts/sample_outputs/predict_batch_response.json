@@ -1,0 +1,63 @@
+{
+  "request": {
+    "items": [
+      {
+        "customer_inn": "7707083893",
+        "region": "г. Москва",
+        "fz_type": "44-ФЗ",
+        "procedure_type": "Электронный аукцион",
+        "nmck_rub": 500000,
+        "participants_count_est": 5,
+        "customer_avg_drop": 0.12,
+        "customer_contracts_count": 10
+      },
+      {
+        "customer_inn": "7814000000",
+        "region": "г. Санкт-Петербург",
+        "fz_type": "223-ФЗ",
+        "procedure_type": "Открытый конкурс",
+        "nmck_rub": 15000000,
+        "participants_count_est": 3,
+        "customer_avg_drop": 0.08,
+        "customer_contracts_count": 45
+      },
+      {
+        "customer_inn": "5401000000",
+        "region": "Новосибирская область",
+        "fz_type": "44-ФЗ",
+        "procedure_type": "Запрос котировок",
+        "nmck_rub": 120000,
+        "participants_count_est": 8,
+        "customer_avg_drop": 0.18,
+        "customer_contracts_count": 5
+      }
+    ]
+  },
+  "response": {
+    "predictions": [
+      {
+        "predicted_drop_fraction": 0.1535,
+        "predicted_drop_percent": 15.35,
+        "confidence_low": 0.0735,
+        "confidence_high": 0.2335,
+        "method": "catboost"
+      },
+      {
+        "predicted_drop_fraction": 0.0821,
+        "predicted_drop_percent": 8.21,
+        "confidence_low": 0.0021,
+        "confidence_high": 0.1621,
+        "method": "catboost"
+      },
+      {
+        "predicted_drop_fraction": 0.2008,
+        "predicted_drop_percent": 20.08,
+        "confidence_low": 0.1208,
+        "confidence_high": 0.2808,
+        "method": "catboost"
+      }
+    ],
+    "count": 3,
+    "elapsed_ms": 1.85
+  }
+}

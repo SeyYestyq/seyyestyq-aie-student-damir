@@ -1,0 +1,19 @@
+{
+  "request": {
+    "customer_inn": "7707083893",
+    "region": "г. Москва",
+    "fz_type": "44-ФЗ",
+    "procedure_type": "Электронный аукцион",
+    "nmck_rub": 500000,
+    "participants_count_est": 5,
+    "customer_avg_drop": 0.12,
+    "customer_contracts_count": 10
+  },
+  "response": {
+    "predicted_drop_fraction": 0.1535,
+    "predicted_drop_percent": 15.35,
+    "confidence_low": 0.0735,
+    "confidence_high": 0.2335,
+    "method": "catboost"
+  }
+}
